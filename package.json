@@ -1,0 +1,27 @@
+{
+    "name": "wasi-md-v7",
+    "version": "7.0.0",
+    "description": "WASI-MD V7 - Advanced WhatsApp Bot by ITXXWASI",
+    "main": "start.js",
+    "scripts": {
+        "start": "node start.js"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/itxxwasi/WASI-MD-V7.git"
+    },
+    "keywords": [
+        "whatsapp",
+        "bot",
+        "wasi-md",
+        "baileys"
+    ],
+    "author": "ITXXWASI",
+    "license": "MIT",
+    "dependencies": {
+        "simple-git": "^3.22.0"
+    }
+}

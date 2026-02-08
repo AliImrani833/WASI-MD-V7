@@ -1,0 +1,12 @@
+node_modules/
+.env
+*.log
+wasi_core/
+.wasi_cache/
+core/
+lib/Sessions/
+temp/
+backups/
+logs/
+*.session
+.DS_Store

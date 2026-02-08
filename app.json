@@ -1,0 +1,63 @@
+{
+    "name": "WASI-MD V7",
+    "description": "Advanced WhatsApp Bot by ITXXWASI - Docker-based Deployment",
+    "repository": "https://github.com/itxxwasi/wasi-md-loader",
+    "logo": "https://raw.githubusercontent.com/itxxwasi/WASI-MD-V7/master/assets/logo.png",
+    "keywords": [
+        "whatsapp",
+        "bot",
+        "automation",
+        "wasi-md",
+        "baileys",
+        "multi-device",
+        "heroku",
+        "docker"
+    ],
+    "stack": "container",
+    "env": {
+        "MONGODB_URI": {
+            "description": "MongoDB connection string (Get free from: mongodb.com/cloud/atlas)",
+            "required": true
+        },
+        "SESSION_ID": {
+            "description": "Your WhatsApp Session ID (unique identifier for your bot)",
+            "required": true
+        },
+        "OWNER_NUMBER": {
+            "description": "Bot owner's WhatsApp number with country code (e.g., 263788049675)",
+            "required": true
+        },
+        "PREFIX": {
+            "description": "Command prefix for bot commands",
+            "value": ".",
+            "required": false
+        },
+        "BOT_NAME": {
+            "description": "Display name for the bot",
+            "value": "WASI-MD V7",
+            "required": false
+        },
+        "MODE": {
+            "description": "Bot mode: public, private, or group",
+            "value": "public",
+            "required": false
+        },
+        "AUTO_READ": {
+            "description": "Automatically mark messages as read",
+            "value": "false",
+            "required": false
+        },
+        "ALWAYS_ONLINE": {
+            "description": "Keep bot always online",
+            "value": "true",
+            "required": false
+        }
+    },
+    "formation": {
+        "web": {
+            "quantity": 1,
+            "size": "basic"
+        }
+    },
+    "addons": []
+}
