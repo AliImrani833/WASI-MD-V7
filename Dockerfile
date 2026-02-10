@@ -1,14 +1,11 @@
-# ═══════════════════════════════════════════════════════════════════
-#  WASI-MD-V7 Heroku Dockerfile
-#  Pulls and runs the actual bot image
-# ═══════════════════════════════════════════════════════════════════
+# Use specific digest to ensure exact version (FRESH BUILD - Just pushed!)
+FROM mrwasi/wasimdv7@sha256:8df63829675926a5eab84237702623ef2365f82a3e3eb4060b883677f2db707e
 
-FROM mrwasi/wasimdv7:latest
-
-# Cache buster - forces Heroku to pull latest image
-# Change this date whenever you update the base image
-ENV CACHE_BUST=2024-02-10-v2
-ENV IMAGE_VERSION=7.0.0-latest
+# Image metadata - UPDATED VERSION
+ENV IMAGE_VERSION=7.0.1
+ENV BUILD_DATE=2024-02-10
+ENV FEATURES="kickall,autojoin,joinrequests,devreact"
+ENV LAST_UPDATE="Just now - Fresh build"
 
 # Heroku requires binding to $PORT
 ENV PORT=3000
