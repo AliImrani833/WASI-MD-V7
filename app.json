@@ -162,16 +162,6 @@
             "value": "true",
             "required": false
         },
-        "NEWSLETTER_JID": {
-            "description": "Newsletter JID (Can be changed via .settings set newsletterJid <value>)",
-            "value": "120363419652241844@newsletter",
-            "required": false
-        },
-        "NEWSLETTER_NAME": {
-            "description": "Newsletter name (Can be changed via .settings set newsletterName <value>)",
-            "value": "WASI-MD-V7",
-            "required": false
-        },
         "YT_COOKIES": {
             "description": "YouTube cookies for downloads (Can be changed via .settings set ytCookies <value>)",
             "value": "",
