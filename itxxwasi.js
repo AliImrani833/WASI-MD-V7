@@ -12,7 +12,7 @@ const path = require('path');
 
 // Configuration
 const CONFIG = {
-    DOCKER_IMAGE: process.env.DOCKER_IMAGE || 'mrwasi/sha256:4c0e06bfe4c36201d778420b85f063e3afe88a3594e7278461a2b6d116880de8',
+    DOCKER_IMAGE: process.env.DOCKER_IMAGE || 'mrwasi/wasimdv7:latest',
     CONTAINER_NAME: 'wasi-md-v7-bot',
     MAX_RETRIES: 3,
     RETRY_DELAY: 5000, // 5 seconds
